@@ -8,7 +8,7 @@ In order to complete this task, you should review the project code and prepare y
 - Create fork to your own repo
 - Create new branch
 - Leave comments in code, commit some code changes, suggestions,etc
-- Create Pull Request
+- Create Pull Request ${your_fork}/code-review-branch -> ${your_fork}/master
 - Provide link to the Pull Request
 
 # Task Hints
