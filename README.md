@@ -3,12 +3,12 @@
 👋 Welcome to project sample created by CLIK devs 🥷.
 
 In order to complete this task, you should review the project code and prepare your `report`(repo FORK => PR/New Issue etc;).
-# How to contribute*
+# How to contribute
 * Accept invitation  
 * Create fork to your own repo
 * Create new branch
 * Leave comments in code, commit some code changes, suggestions,etc
-* Create Pull Request
+* Create Pull Request from ${your_fork}/${code-review-branch-name} -> ${your_fork}/master
 * Provide link to the Pull Request
 
 # Task Hints
