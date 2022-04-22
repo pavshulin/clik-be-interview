@@ -7,6 +7,7 @@ class OrderService {
      * @param orderId
      */
     async getById(orderId) {
+        // unnecessary variable
         const order = await OrderDao.findById(orderId);
         return order;
     }
@@ -19,9 +20,11 @@ class OrderService {
         const order = await OrderDao.findById(orderId);
 
         if(order) {
+            //order.isActive()
             if(order.status === 'READY_TO_PICKUP') {
                 const courier = await CourierService.findNearest()
 
+                //order.isTrusted()
                 if (courier.rating < 2) {
                     return false;
                 }

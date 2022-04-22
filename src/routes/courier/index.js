@@ -4,6 +4,7 @@ import { CourierService } from '../../modules/courier/courier.service';
 
 const router = express.Router();
 
+// couriers/:id/orders?status=active
 router.get('/current/order/:id', async (req, res, next) => {
     try {
         const courierId = req.params.id;
@@ -14,6 +15,7 @@ router.get('/current/order/:id', async (req, res, next) => {
     }
 });
 
+// POST /profile/:id?action=
 router.post('/change/profile/picture/:id', async (req, res, next) => {
     try {
         const courierId = req.params.id;
@@ -23,7 +25,7 @@ router.post('/change/profile/picture/:id', async (req, res, next) => {
         const buffer = req.fileBuffer;
 
         await CourierService.uploadPhotoToS3(courierId, buffer);
-        
+
         return res.json({ status: true });
     } catch (err) {
         return next(err);
